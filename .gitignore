@@ -1,0 +1,95 @@
+# =========================
+# Global Node ignores
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+*.log.*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment Files
+.env
+.env.*
+!.env.example
+
+# =========================
+# Backend (Express)
+# =========================
+backend/node_modules/
+backend/dist/
+backend/build/
+backend/coverage/
+backend/.env
+backend/.env.*
+
+# PM2 logs
+backend/.pm2/
+
+# Uploaded files (if using multer)
+backend/uploads/
+backend/temp/
+
+# =========================
+# Mobile (React Native)
+# =========================
+mobile/node_modules/
+mobile/npm-debug.log*
+mobile/yarn-error.log*
+
+# Metro / cache
+mobile/.expo/
+mobile/.expo-shared/
+mobile/.expo/*
+.expo/
+.expo-shared/
+.expo/*
+
+# Android
+mobile/android/.gradle/
+mobile/android/app/build/
+mobile/android/build/
+mobile/android/local.properties
+
+# iOS
+mobile/ios/Pods/
+mobile/ios/build/
+mobile/ios/DerivedData/
+mobile/ios/*.xcworkspace
+mobile/ios/Podfile.lock
+
+# React Native build artifacts
+mobile/build/
+mobile/.gradle/
+mobile/.idea/
+mobile/*.iml
+
+# Bundles
+mobile/*.jsbundle
+
+# Misc
+mobile/.bundle/
+mobile/.vscode/
+mobile/.env
+mobile/.env.*
+
+# =========================
+# Editor / OS files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak
