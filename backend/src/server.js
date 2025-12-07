@@ -13,10 +13,17 @@ import { arcjetMiddleware } from "./middleware/arcjet.middleware.js";
 
 const app = express();
 
-app.use(cors());
-app.use(express.json());
+app.use(
+  cors({
+    origin: "*",
+    allowedHeaders: ["Authorization", "Content-Type"],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  })
+);
 
+app.use(express.json());
 app.use(clerkMiddleware());
+
 app.use(arcjetMiddleware);
 
 app.get("/", (req, res) => res.send("Hello from server"));
